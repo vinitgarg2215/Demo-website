@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dr. Arman Malik | Dentist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #1e5f74;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd369;
+    }
+
+    .hero {
+      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1588776814546-ec7e5c6b7c2e') no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .about {
+      background: #dff6ff;
+    }
+
+    .contact {
+      background: #0a3d62;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e5f74;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #ffd369;
+      color: black;
+      cursor: pointer;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #ffc107;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Dr. Arman Malik</h1>
+  <p>Experienced Dentist | 20+ Years of Excellence</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <h1>Your Smile, Our Priority</h1>
+    <p>Advanced Dental Care with 20 Years of Experience</p>
+    <button onclick="scrollToContact()">Book Appointment</button>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Teeth Cleaning</h3>
+      <p>Professional cleaning for healthy teeth.</p>
+    </div>
+
+    <div class="card">
+      <h3>Root Canal</h3>
+      <p>Pain-free root canal treatment.</p>
+    </div>
+
+    <div class="card">
+      <h3>Braces & Aligners</h3>
+      <p>Perfect smile with modern solutions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Teeth Whitening</h3>
+      <p>Brighten your smile instantly.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <h2>About Dr. Arman Malik</h2>
+  <p>
+    Dr. Arman Malik is a highly experienced dentist with over 20 years of expertise
+    in providing advanced dental care. Known for his patient-friendly approach and
+    precision, he has helped thousands achieve confident smiles.
+  </p>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 Location: Your City</p>
+  <p>📞 Phone: +91 XXXXX XXXXX</p>
+  <p>📧 Email: drarmanmalik@gmail.com</p>
+
+  <button onclick="alert('Appointment Booked!')">Book Now</button>
+</section>
+
+<footer>
+  <p>© 2026 Dr. Arman Malik | All Rights Reserved</p>
+</footer>
+
+<script>
+  function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>
